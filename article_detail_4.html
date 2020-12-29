@@ -17,79 +17,57 @@ pagead/js/adsbygoogle.js"></script>
 <link rel="stylesheet" href="app.css" />
 <link rel="shorcut icon" href="connectdevelop-brands.svg" />
 <body>
-	<div class="body-content min-height-100vh flex flex-column">
-		<!-- 로고바 시작 -->
-		<header class="logo-bar con-min-width">
-			<div class="con height-100p flex flex-jc-c">
-				<a href="index.html" class="logo flex flex-ai-c">
-					<i class="fab fa-connectdevelop"></i>
-					<span>
-						Clean&nbspCo<span>d</span>e
-					</span>
-				</a>
-			</div>
-		</header>
-		<!-- 로고바 끝 -->
-
 		<!-- 메뉴바 시작 -->
-		<header class="menu-bar con-min-width">
-			<div class="con height-100p">
-				<nav class="menu-bar__menu-1">
-					<ul class="flex">
-						<li>
-							<a href="index.html" class="block">
-								<i class="fas fa-home"></i>
-								<span>HOME</span>
-							</a>
-						</li>
-						<li>
-							<a class="block">
-								<i class="fas fa-list"></i>
-								<span>ARTICLES</span>
-							</a>
-							<ul>
-								<li><a href="article_list_it_1.html" class="block"><i class="fas fa-clipboard-list"></i> <span>NOTICE LIST</span></a></li><li><a href="article_list_free_1.html" class="block"><i class="fab fa-free-code-camp"></i> <span>FREE LIST</span></a></li><li><a href="article_list_notice_1.html" class="block"><i class="fas fa-flag"></i> <span>NOTICE LIST</span></a></li>
-							</ul>
-						</li>
-						<li>
-							<a class="block">
-								<i class="fas fa-link"></i>
-								<span>LINK</span>
-							</a>
-							<ul>
-								<li>
-									<a href="https://david95j2.tistory.com/" target="_blank"
-										class="block">
-										<i class="fab fa-blogger-b"></i>
-										<span>BLOG</span>
-									</a>
-								</li>
-								<li>
-									<a href="https://github.com/" target="_blank" class="block">
-										<i class="fab fa-github"></i>
-										<span>GITHUB</span>
-									</a>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a href="index.html" class="block">
-								<i class="fas fa-chart-pie"></i>
-								<span>STATISTICS</span>
-							</a>
-						</li>
-					</ul>
-				</nav>
+		<header>
+			<div class="container clearfix">
+			  <h1 class="logo"><a href="">Clean&Code logo</a></h1>
+			  <nav class="clearfix">
+				<ul class="main-menu">
+				  <li><a href="" class="active">Home</a></li>
+				  <li><a href="">Articles</a></li>
+				  <li><a href="https://david95j2.tistory.com/">Blog</a></li>
+				  <li><a href="https://github.com/david95j2">Github</a></li>
+				  <li><a href="">STATISTICS</a></li>
+				</ul>
+				<ul class="top-icons">
+				  <!--<li><a href=""><i class="fas fa-shopping-bag"></i></a></li>-->
+				  <li><a href=""><i class="fas fa-search"></i></a></li>
+				</ul>
+				<span class="toggle"><i class="fas fa-bars"></i></span>
+			  </nav>
 			</div>
-		</header>
+		  </header>	  
 		<!-- 메뉴바 끝 -->
 
 		<main class="flex-grow-1">
-			<section class="title-bar con-min-width">
-				<h1 class="con ft-si-30p">
-					<i class="fas fa-file-alt"></i> <span>ARTICLE DETAIL</span>
-				</h1>
-			</section>
+			<main class="content">
+				<section class="services container clearfix">
+				  <div class="service_item">
+					<span class="icon"></span>
+					<h4></h4>
+					<p></p>
+					<span class="status"></span>
+				  </div>
+				  <div class="service_item">
+					<span class="icon"></span>
+					<h4></h4>
+					<p></p>
+					<span class="status"></span>
+				  </div>
+				  <div class="service_item">
+					<span class="icon"></span>
+					<h4></h4>
+					<p></p>
+					<span class="status"></span>
+				  </div>
+				  <div class="service_item">
+					<span class="icon"></span>
+					<h4></h4>
+					<p></p>
+					<span class="status"></span>
+				  </div>
+				  
+				</section><!--//services-->
 <!-- 하이라이트 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
 <script
 	src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
@@ -117,7 +95,7 @@ pagead/js/adsbygoogle.js"></script>
 			<h2 class="article-detail__title">4강 자바 들여쓰기(indentation) 규칙 권장안</h2>
 
 			<div class="article-detail__sub-info flex">
-				<div class="article-detail__board-name">SQL</div>
+				<div class="article-detail__board-name">자바</div>
 				<div class="article-detail__reg-date">2020-12-20 20:16:39</div>
 				<div class="article-detail__writer">이주영</div>
 			</div>
@@ -188,7 +166,7 @@ HTML, XML의 경우에는 일반적으로 2자리 띄어쓰기가 기본이다. 
 				<a title="3강 Clean Code🙋‍♀🙋‍♂🙋"
 					href="article_detail_3.html"
 					class="hover-underline ">&lt;
-					이전글</a> <a href="article_list_it_1.html"
+					이전글</a> <a href="article_list_java_1.html"
 					class="hover-underline ">목록</a>
 				<a title="5강 스레드(Thread)"
 					href="article_detail_5.html"
@@ -199,19 +177,50 @@ HTML, XML의 경우에는 일반적으로 2자리 띄어쓰기가 기본이다. 
 	</div>
 </section></main>
 
-<footer class="bottom-bar con-min-width">
-	<div class="con flex flex-ai-c mg-lf-15p">
-		<a href="#" class="logo logo--mini flex flex-ai-c">
-			<i class="fab fa-connectdevelop"></i>
-			<span>
-				Clean&nbspCo<span>d</span>e
-			</span>
-		</a>
-
-		<div class="bottom-bar__site-info">(C) 2020.12. All rights reserved.</div>
+<footer>
+	<div class="footer_top">
+	  <div class="container">
+		<div class="col-one-forth">
+		  <h2 class="footer_logo"><a href=""></a></h2>
+		  <p></p>
+		  <a href=""><span><i class=""></i></span></a>
+		</div>
+		<div class="col-one-forth">
+		  <h3></h3>
+		  <ul>
+			<li></li>
+		  </ul>
+		</div>
+		<div class="col-one-forth">
+		  <h3></h3>
+		  <ul>
+			<li></li>
+		  </ul>
+		</div>
+		<div class="col-one-forth">
+		  <h3></h3>
+		  <ul>
+			<li><a href=""><img src="" alt=""></a></li>
+		  </ul>
+		</div>
+	  </div>
 	</div>
-</footer>
-</div>
+	<div class="footer_bottom">
+	  <div class="container clearfix">
+		<div class="footer_logo">
+		  <a href=""></a>
+		</div>
+		<div class="copy">
+		  <p>Copyright &copy; 2020 <span>Clean Code</span> <span class="devider">&#124;</span> <a href="">Privacy Policy</a> &#124;
+		  <a href="">FAQ</a> <span class="devider">&#124;</span> <a href="">Support</a></p>
+		</div>
+		<div class="designer">
+		  <p>Designed by <a href="">Ju Yeong</a> &#124; only on <a href="">Devloper's blog</a></p>
+		</div>
+	  </div>
+	</div>
+  </footer>
+
 <script src="app.js"></script>
 </body>
 </html>
