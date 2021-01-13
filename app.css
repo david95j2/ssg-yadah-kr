@@ -198,7 +198,7 @@ header .logo a{width: 171px; height: 56px; background: url(../images/Top_logo_wh
     header {position: static; top: 0; background: #fff; padding: 20px 0 0;  box-shadow: 0 3px 3px rgba(0,0,0,.3);}
     .toggle {display: block; position: absolute; top: 20px; right: 15px; line-height: 56px;}
     header .container {padding: 0;}
-    header .logo a {background-image: url(../site/images/logo_test_resize_white.png);}
+    header .logo a {background-image: url(../images/Top_logo_white.png);}
     .top-icons li:last-child {display: none;}
     .top-icons li a {color: #555;}
     header nav {float: none; background: #111; padding: 0 15px;}
