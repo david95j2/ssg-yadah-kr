@@ -18,66 +18,258 @@
 <!-- 메타태그정보 //-->
 <!-- META -->
 <link rel="canonical" href="https://ssg.yadah.kr" />
-<meta name="subject" content="제목3"/>
+<meta name="subject" content="3강 Clean Code????‍♀????‍♂????"/>
 <meta name="title" content="Clean Code" />
 <meta name="keywords" content="HTML, CSS, JAVASCRIPT, JAVA, SPRING, MySQL, 리눅스, 리액트" />
 <meta name="copyright" content="Clean Code" />
-<meta name="pubdate" content="2021-01-19T02:49:19" />
-<meta name="lastmod" content="2021-01-19T02:49:19" />
+<meta name="pubdate" content="2021-01-19T03:11:49" />
+<meta name="lastmod" content="2021-01-19T03:11:49" />
 <!-- OPENGRAPH -->
 <meta property="og:site_name" content="Clean Code" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="제목3" />
-<meta property="og:description" content=" 공지사항
-안녕하세요
-이 사이트는 저의 글 연재 공간입니다
+<meta property="og:title" content="3강 Clean Code????‍♀????‍♂????" />
+<meta property="og:description" content=" 어떻게 clean code 를 할 수 있을까
+
+ 좋은 코드란
+
+좋은 코드라는 것은 일단 돌아가기만하면 되는 코드가 절대 아니다 좋은 코드란 코드 그 자체로 설명이 다 되는 코드이다
+
+만약 팀으로 일한다면 좋은 코드는 팀원들이 딱 읽었을때 읽기만 해도 무엇인지 이해가 되고
+코드가 무엇을 하는지 물어볼 필요도 없이 이해가 되는 코드이다 또한 혼자서 일한다면 나중에 그 코드를 
+읽을때 당시 내가 고민하던 것이 무엇인지 코드만으로 이해가 되고 부연설명 없이 코드로 설명이 되는 상태이다
+
+ JAVA
+String cleanCode  코드 작동도 잘되고 부연설명이 필요없는 상태
+
+
+ TIP 
+ 검색이 가능한 이름을 써라
+
+코딩을 하다보면 랜덤하게 값을 추가해야할 때가 있다 하루가 총 몇 초인지를 요구하는 함수가 있다면 해당 숫자를 
+변수Variable로 해두는 것이 좋다 그냥 바로 계산해버리면 다른 팀원이 봤을 때 그 함수가 무엇을 하는지 이해를 
+못할 수 있기 때문이다
+
+JAVA
+int secondsInADay  86400
+getSecondssecondsInADay
+
+
+ 함수명은 반드시 동사명을 써라
+
+JAVA
+public void userData 
+	 
 
 
 
- 이 사이트의 특징
- A
- B
- C" />
+보다
+
+JAVA
+public void loadUserData 
+	 
+
+
+가 훨씬 좋다 이렇게 이름을 짓다보면 함수가 너무 많은 역할을 하는 것이 아닌지 알게되기도 한다 왜냐하면
+함수는 딱 한가지 역할만 잘해야한다 함수명을 그들이 하는 역할 동사Verb로 짓기 시작하면 구분의 필수를 느낄수 있다
+함수는 무조건 단 한가지 액션만 수행해야 한다
+
+ 몇 개의 인수를 가져야 할까
+
+가장 좋은 숫자는 3개 혹은 그 이하이다 만약 함수가 너무 많은 수의 인수를 필요로 한다면 다른 사람이 봤을 때 어떤 인수가
+무얼 하는지 몰라 혼란스러울 수가 있다 
+
+JAVA
+getForPrintsArticleidregDateboardIdmemberIdtitle
+
+
+ boolean 값을 인수로 함수에 보내는 것을 최대한 방지하도록 하자
+
+boolean 값은 참 혹은 거짓을 의미하는 데이터 타입이다 boolean 값을 함수에 보낸다는 것은 그 함수 안에 if else 가 있다는 뜻이고
+추천하는 것은 각각의 ifelse 값을 다른 함수로 분리하는 것이 좋다 
+
+ 짧은 변수명이나 아무도 이해못하는 축약어 쓰는 것을 피하자
+
+예를 들어 
+JAVA
+loginuiup
+ 가 아닌
+loginuserIduserPassword
+
+
+
+ 끝맺음
+나는 코딩을 할때는 약간 미친 모드가 되어서 코딩을 하고는 한다 미친듯이 쓰면서 뭔가 작동이 되게끔 하려고 애를 쓴다
+이를 방지하기 위해 초기 시작점에서 코드를 이쁘게 쓰려고 하면 안된다 겁내 못생겨도 일단 코드를 쓰고 작동이 되는 것을 확인하고
+그 다음에 클린 코드로 다듬어주도록 하자 처음부터 이쁘장한 코드로 쓰는 것은 매우 어려운 일이다 마지막에 코딩 대청소하기
+" />
 <meta property="og:locale" content="ko_KR" />
 <meta property="og:image" content="https://ssg.yadah.kr/img/logo/logo_opengraph.png" />
 <meta property="og:image:alt" content="ssg.yadah.kr" />
 <meta property="og:image:width" content="486" />
 <meta property="og:image:height" content="324" />
-<meta property="og:updated_time" content="2021-01-19T02:49:19"/>
-<meta property="og:pubdate" content="2021-01-19T02:49:19" />
+<meta property="og:updated_time" content="2021-01-19T03:11:49"/>
+<meta property="og:pubdate" content="2021-01-19T03:11:49" />
 <meta property="og:url" content="https://ssg.yadah.kr" />
 <!-- TWITTER -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="제목3" />
+<meta name="twitter:title" content="3강 Clean Code????‍♀????‍♂????" />
 <meta name="twitter:site" content="@Clean Code" />
 <meta name="twitter:creator" content="@Clean Code" />
 <meta name="twitter:image" content="/img/logo/logo_opengraph.png">
-<meta name="twitter:description" content=" 공지사항
-안녕하세요
-이 사이트는 저의 글 연재 공간입니다
+<meta name="twitter:description" content=" 어떻게 clean code 를 할 수 있을까
+
+ 좋은 코드란
+
+좋은 코드라는 것은 일단 돌아가기만하면 되는 코드가 절대 아니다 좋은 코드란 코드 그 자체로 설명이 다 되는 코드이다
+
+만약 팀으로 일한다면 좋은 코드는 팀원들이 딱 읽었을때 읽기만 해도 무엇인지 이해가 되고
+코드가 무엇을 하는지 물어볼 필요도 없이 이해가 되는 코드이다 또한 혼자서 일한다면 나중에 그 코드를 
+읽을때 당시 내가 고민하던 것이 무엇인지 코드만으로 이해가 되고 부연설명 없이 코드로 설명이 되는 상태이다
+
+ JAVA
+String cleanCode  코드 작동도 잘되고 부연설명이 필요없는 상태
+
+
+ TIP 
+ 검색이 가능한 이름을 써라
+
+코딩을 하다보면 랜덤하게 값을 추가해야할 때가 있다 하루가 총 몇 초인지를 요구하는 함수가 있다면 해당 숫자를 
+변수Variable로 해두는 것이 좋다 그냥 바로 계산해버리면 다른 팀원이 봤을 때 그 함수가 무엇을 하는지 이해를 
+못할 수 있기 때문이다
+
+JAVA
+int secondsInADay  86400
+getSecondssecondsInADay
+
+
+ 함수명은 반드시 동사명을 써라
+
+JAVA
+public void userData 
+	 
 
 
 
- 이 사이트의 특징
- A
- B
- C" />
+보다
+
+JAVA
+public void loadUserData 
+	 
+
+
+가 훨씬 좋다 이렇게 이름을 짓다보면 함수가 너무 많은 역할을 하는 것이 아닌지 알게되기도 한다 왜냐하면
+함수는 딱 한가지 역할만 잘해야한다 함수명을 그들이 하는 역할 동사Verb로 짓기 시작하면 구분의 필수를 느낄수 있다
+함수는 무조건 단 한가지 액션만 수행해야 한다
+
+ 몇 개의 인수를 가져야 할까
+
+가장 좋은 숫자는 3개 혹은 그 이하이다 만약 함수가 너무 많은 수의 인수를 필요로 한다면 다른 사람이 봤을 때 어떤 인수가
+무얼 하는지 몰라 혼란스러울 수가 있다 
+
+JAVA
+getForPrintsArticleidregDateboardIdmemberIdtitle
+
+
+ boolean 값을 인수로 함수에 보내는 것을 최대한 방지하도록 하자
+
+boolean 값은 참 혹은 거짓을 의미하는 데이터 타입이다 boolean 값을 함수에 보낸다는 것은 그 함수 안에 if else 가 있다는 뜻이고
+추천하는 것은 각각의 ifelse 값을 다른 함수로 분리하는 것이 좋다 
+
+ 짧은 변수명이나 아무도 이해못하는 축약어 쓰는 것을 피하자
+
+예를 들어 
+JAVA
+loginuiup
+ 가 아닌
+loginuserIduserPassword
+
+
+
+ 끝맺음
+나는 코딩을 할때는 약간 미친 모드가 되어서 코딩을 하고는 한다 미친듯이 쓰면서 뭔가 작동이 되게끔 하려고 애를 쓴다
+이를 방지하기 위해 초기 시작점에서 코드를 이쁘게 쓰려고 하면 안된다 겁내 못생겨도 일단 코드를 쓰고 작동이 되는 것을 확인하고
+그 다음에 클린 코드로 다듬어주도록 하자 처음부터 이쁘장한 코드로 쓰는 것은 매우 어려운 일이다 마지막에 코딩 대청소하기
+" />
 <!-- GOOGLE+ -->
 <meta itemprop="headline" content="Clean Code" />
 <meta itemprop="name" content="Clean Code" />
-<meta itemprop="description" content=" 공지사항
-안녕하세요
-이 사이트는 저의 글 연재 공간입니다
+<meta itemprop="description" content=" 어떻게 clean code 를 할 수 있을까
+
+ 좋은 코드란
+
+좋은 코드라는 것은 일단 돌아가기만하면 되는 코드가 절대 아니다 좋은 코드란 코드 그 자체로 설명이 다 되는 코드이다
+
+만약 팀으로 일한다면 좋은 코드는 팀원들이 딱 읽었을때 읽기만 해도 무엇인지 이해가 되고
+코드가 무엇을 하는지 물어볼 필요도 없이 이해가 되는 코드이다 또한 혼자서 일한다면 나중에 그 코드를 
+읽을때 당시 내가 고민하던 것이 무엇인지 코드만으로 이해가 되고 부연설명 없이 코드로 설명이 되는 상태이다
+
+ JAVA
+String cleanCode  코드 작동도 잘되고 부연설명이 필요없는 상태
+
+
+ TIP 
+ 검색이 가능한 이름을 써라
+
+코딩을 하다보면 랜덤하게 값을 추가해야할 때가 있다 하루가 총 몇 초인지를 요구하는 함수가 있다면 해당 숫자를 
+변수Variable로 해두는 것이 좋다 그냥 바로 계산해버리면 다른 팀원이 봤을 때 그 함수가 무엇을 하는지 이해를 
+못할 수 있기 때문이다
+
+JAVA
+int secondsInADay  86400
+getSecondssecondsInADay
+
+
+ 함수명은 반드시 동사명을 써라
+
+JAVA
+public void userData 
+	 
 
 
 
- 이 사이트의 특징
- A
- B
- C" />
+보다
+
+JAVA
+public void loadUserData 
+	 
+
+
+가 훨씬 좋다 이렇게 이름을 짓다보면 함수가 너무 많은 역할을 하는 것이 아닌지 알게되기도 한다 왜냐하면
+함수는 딱 한가지 역할만 잘해야한다 함수명을 그들이 하는 역할 동사Verb로 짓기 시작하면 구분의 필수를 느낄수 있다
+함수는 무조건 단 한가지 액션만 수행해야 한다
+
+ 몇 개의 인수를 가져야 할까
+
+가장 좋은 숫자는 3개 혹은 그 이하이다 만약 함수가 너무 많은 수의 인수를 필요로 한다면 다른 사람이 봤을 때 어떤 인수가
+무얼 하는지 몰라 혼란스러울 수가 있다 
+
+JAVA
+getForPrintsArticleidregDateboardIdmemberIdtitle
+
+
+ boolean 값을 인수로 함수에 보내는 것을 최대한 방지하도록 하자
+
+boolean 값은 참 혹은 거짓을 의미하는 데이터 타입이다 boolean 값을 함수에 보낸다는 것은 그 함수 안에 if else 가 있다는 뜻이고
+추천하는 것은 각각의 ifelse 값을 다른 함수로 분리하는 것이 좋다 
+
+ 짧은 변수명이나 아무도 이해못하는 축약어 쓰는 것을 피하자
+
+예를 들어 
+JAVA
+loginuiup
+ 가 아닌
+loginuserIduserPassword
+
+
+
+ 끝맺음
+나는 코딩을 할때는 약간 미친 모드가 되어서 코딩을 하고는 한다 미친듯이 쓰면서 뭔가 작동이 되게끔 하려고 애를 쓴다
+이를 방지하기 위해 초기 시작점에서 코드를 이쁘게 쓰려고 하면 안된다 겁내 못생겨도 일단 코드를 쓰고 작동이 되는 것을 확인하고
+그 다음에 클린 코드로 다듬어주도록 하자 처음부터 이쁘장한 코드로 쓰는 것은 매우 어려운 일이다 마지막에 코딩 대청소하기
+" />
 <meta itemprop="image" content="/img/logo/logo_opengraph.png" />
 
-<title>제목3 | Clean Code | ARTICLE DETAIL</title>
+<title>3강 Clean Code????‍♀????‍♂???? | Clean Code | ARTICLE DETAIL</title>
 
 <!-- 폰트어썸 불러오기 -->
 <link rel="stylesheet"
@@ -151,7 +343,7 @@
 								<span>ARTICLES</span>
 							</a>
 							<ul>
-								<li><a href="article_list_free_1.html" class="block"><i class="fab fa-free-code-camp"></i> <span>FREE LIST</span></a></li><li><a href="article_list_notice_1.html" class="block"><i class="fas fa-flag"></i> <span>NOTICE LIST</span></a></li>
+								<li><a href="article_list_MySQL_1.html" class="block"><i class="fab fa-java"></i> <span>MySQL LIST</span></a></li><li><a href="article_list_JAVA_1.html" class="block"><i class="fab fa-java"></i> <span>JAVA LIST</span></a></li>
 							</ul>
 						</li>
 						<li>
@@ -195,28 +387,92 @@
 			</section><section class="section-1 con-min-width">
 	<div class="con">
 		<div class="article-detail">
-			<h2 class="article-detail__title">제목3</h2>
+			<h2 class="article-detail__title">3강 Clean Code????‍♀????‍♂????</h2>
 
 			<div class="article-detail__sub-info flex">
-				<div class="article-detail__board-name">공지사항</div>
+				<div class="article-detail__board-name">JAVA</div>
 				<div class="article-detail__reg-date">2021-01-19 02:30:48</div>
-				<div class="article-detail__writer">테스터1</div>
+				<div class="article-detail__writer">이주영</div>
 				<div class="article-detail__hit-count">조회수 : 0</div>
 				<div class="article-detail__likes-count">추천수 : 0</div>
 				<div class="article-detail__comments-count">댓글수 : 1</div>
 			</div>
 
 			<script type="text/x-template">
-# 공지사항
-안녕하세요.
-이 사이트는 저의 글 연재 공간입니다.
+# 어떻게 clean code 를 할 수 있을까?
 
----
+## 좋은 코드란?
 
-# 이 사이트의 특징
-- A
-- B
-- C
+좋은 코드라는 것은 일단 돌아가기만하면 되는 코드가 절대 아니다. 좋은 코드란 코드 그 자체로 설명이 다 되는 코드이다.
+
+만약 팀으로 일한다면 좋은 코드는 팀원들이 딱 읽었을때, 읽기만 해도 무엇인지 이해가 되고,
+코드가 무엇을 하는지 물어볼 필요도 없이 이해가 되는 코드이다. 또한 혼자서 일한다면, 나중에 그 코드를 
+읽을때 당시 내가 고민하던 것이 무엇인지 코드만으로 이해가 되고 부연설명 없이 코드로 설명이 되는 상태이다.
+
+``` JAVA
+String cleanCode = "코드 작동도 잘되고, 부연설명이 필요없는 상태!";
+```
+
+## TIP !!
+- 검색이 가능한 이름을 써라
+
+코딩을 하다보면 랜덤하게 값을 추가해야할 때가 있다. 하루가 총 몇 초인지를 요구하는 함수가 있다면, 해당 숫자를 
+변수(Variable)로 해두는 것이 좋다. 그냥 바로 계산해버리면 다른 팀원이 봤을 때 그 함수가 무엇을 하는지 이해를 
+못할 수 있기 때문이다.
+
+```JAVA
+int seconds_In_A_Day = 86400;
+getSeconds(seconds_In_A_Day);
+```
+
+- 함수명은 반드시 동사명을 써라
+
+```JAVA
+public void userData() {
+	// ...
+};
+```
+
+보다
+
+```JAVA
+public void loadUserData() {
+	// ...
+};
+```
+가 훨씬 좋다. 이렇게 이름을 짓다보면 함수가 너무 많은 역할을 하는 것이 아닌지 알게되기도 한다. 왜냐하면
+함수는 딱 한가지 역할만 잘해야한다. 함수명을 그들이 하는 역할. 동사(Verb)로 짓기 시작하면, 구분의 필수를 느낄수 있다.
+함수는 무조건!! 단 한가지 액션만 수행해야 한다.
+
+- 몇 개의 인수를 가져야 할까?
+
+가장 좋은 숫자는 3개 혹은 그 이하이다. 만약 함수가 너무 많은 수의 인수를 필요로 한다면, 다른 사람이 봤을 때 어떤 인수가
+무얼 하는지 몰라 혼란스러울 수가 있다. 
+
+```JAVA
+getForPrintsArticle(id,regDate,boardId,memberId,title);
+```
+
+- boolean 값을 인수로 함수에 보내는 것을 최대한 방지하도록 하자!
+
+boolean 값은 참 혹은 거짓을 의미하는 데이터 타입이다. boolean 값을 함수에 보낸다는 것은 그 함수 안에 if, else 가 있다는 뜻이고
+추천하는 것은 각각의 if-else 값을 다른 함수로 분리하는 것이 좋다. 
+
+- 짧은 변수명이나 (아무도 이해못하는) 축약어 쓰는 것을 피하자!!
+
+예를 들어 
+```JAVA
+login(ui,up);
+// 가 아닌
+login(userId,userPassword);
+```
+
+
+## 끝맺음
+나는 코딩을 할때는 약간 미친(?) 모드가 되어서 코딩을 하고는 한다. 미친듯이 쓰면서 뭔가 작동이 되게끔 하려고 애를 쓴다.
+이를 방지하기 위해 초기 시작점에서 코드를 이쁘게 쓰려고 하면 안된다. 겁내 못생겨도 일단 코드를 쓰고 작동이 되는 것을 확인하고,
+그 다음에 클린 코드로 다듬어주도록 하자. 처음부터 이쁘장한 코드로 쓰는 것은 매우 어려운 일이다. 마지막에 코딩 대청소하기~~~
+
 			</script>
 			<div class="article-detail__body main-font toast-ui-viewer"></div>
 
@@ -242,15 +498,15 @@
 			</div>
 
 			<div class="article-detail__menu flex">
-				<a title=""
-					href="article_detail_0.html"
-					class="hover-underline none">&lt;
+				<a title="2강 자바 명명규칙 권장안????‍♀????‍♂????"
+					href="article_detail_2.html"
+					class="hover-underline ">&lt;
 					이전글</a>
-				<a href="article_list_notice_1.html"
+				<a href="article_list_JAVA_1.html"
 					class="hover-underline ">목록</a>
-				<a title=""
-					href="article_detail_0.html"
-					class="hover-underline none">다음글
+				<a title="4강 자바 들여쓰기(indentation) 규칙 권장안"
+					href="article_detail_4.html"
+					class="hover-underline ">다음글
 					&gt;</a>
 			</div>
 		</div>

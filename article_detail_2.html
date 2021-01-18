@@ -18,54 +18,189 @@
 <!-- 메타태그정보 //-->
 <!-- META -->
 <link rel="canonical" href="https://ssg.yadah.kr" />
-<meta name="subject" content="제목2"/>
+<meta name="subject" content="2강 자바 명명규칙 권장안????‍♀????‍♂????"/>
 <meta name="title" content="Clean Code" />
 <meta name="keywords" content="HTML, CSS, JAVASCRIPT, JAVA, SPRING, MySQL, 리눅스, 리액트" />
 <meta name="copyright" content="Clean Code" />
-<meta name="pubdate" content="2021-01-19T02:49:19" />
-<meta name="lastmod" content="2021-01-19T02:49:19" />
+<meta name="pubdate" content="2021-01-19T03:11:49" />
+<meta name="lastmod" content="2021-01-19T03:11:49" />
 <!-- OPENGRAPH -->
 <meta property="og:site_name" content="Clean Code" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="제목2" />
-<meta property="og:description" content=" 자바기본문법
-java
-int a  10
-int b  20
-int c  a  b
-" />
+<meta property="og:title" content="2강 자바 명명규칙 권장안????‍♀????‍♂????" />
+<meta property="og:description" content=" 자바 프로그램 명명 규칙 권장안
+
+ 패키지 이름
+자신이 속한 조직의 인터넷 도메인 이름을 뒤집은 이름을 사용하여 패키지 이름을 만든다
+ 다른 조직의 패키지 이름과의 충돌을 피하게 해준다
+부서 프로젝트 컴퓨터 로긴 이름 등을 부가해서 패키지 이름을 만들 수 있다
+예 comABCprojectjgl
+java javax는 자바 표준 패키지 이름에만 사용할 수 있도록 예약되어 있다
+ 
+
+ 클래스 이름
+대문자로 시작하는 명사
+이름속에 포함된 각 단어 또한 대문자로 시작
+예 Thread Properties SecurityManager
+ 
+
+ 인터페이스 이름  ILoggerFactory
+대문자로 시작하는 혹은 접두사 I인터페이스를 의미를 붙인 명사 혹은 형용사
+이름속에 포함된 각 단어 또한 대문자로 시작
+예 DataInput Runnable
+ 
+
+ 메소드 이름
+
+소문자로 시작하는 동사
+이름속에 포함된 각 단어는 첫번째 단어를 제외하고 대문자로 시작
+
+타입 T인 v라는 이름의 속성을 접근하기 위한 메소드 이름 T getV void setVT val
+예 javaawtComponent의 void setNameString String getName
+
+ T가 boolean일 경우 getV 대신 isV일 수 있다
+예 javaawtComponent의 void setVisibleboolean boolean isVisible
+
+객체의 내용을 타입 Type으로 변환하여 반환하는 메소드 이름 Type toType
+예 javalangObject 클래스의 String toString
+ 
+
+ 상수가 아닌 인스턴스 변수 클래스 변수 이름
+소문자로 시작하는 명사 혹은 축약된 명사
+이름속에 포함된 각 단어는 첫번째 단어를 제외하고 대문자로 시작
+ 
+
+ 파이널 변수 기본 타입일 경우
+모두 대문자
+이름속에 포함된 각 단어사이는 을 삽입
+예 MINVALUE MAXVALUE PI
+ 
+
+ 지역 변수 매개 변수
+의미 있는 짧은 이름
+예 buf len c i j " />
 <meta property="og:locale" content="ko_KR" />
 <meta property="og:image" content="https://ssg.yadah.kr/img/logo/logo_opengraph.png" />
 <meta property="og:image:alt" content="ssg.yadah.kr" />
 <meta property="og:image:width" content="486" />
 <meta property="og:image:height" content="324" />
-<meta property="og:updated_time" content="2021-01-19T02:49:19"/>
-<meta property="og:pubdate" content="2021-01-19T02:49:19" />
+<meta property="og:updated_time" content="2021-01-19T03:11:49"/>
+<meta property="og:pubdate" content="2021-01-19T03:11:49" />
 <meta property="og:url" content="https://ssg.yadah.kr" />
 <!-- TWITTER -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="제목2" />
+<meta name="twitter:title" content="2강 자바 명명규칙 권장안????‍♀????‍♂????" />
 <meta name="twitter:site" content="@Clean Code" />
 <meta name="twitter:creator" content="@Clean Code" />
 <meta name="twitter:image" content="/img/logo/logo_opengraph.png">
-<meta name="twitter:description" content=" 자바기본문법
-java
-int a  10
-int b  20
-int c  a  b
-" />
+<meta name="twitter:description" content=" 자바 프로그램 명명 규칙 권장안
+
+ 패키지 이름
+자신이 속한 조직의 인터넷 도메인 이름을 뒤집은 이름을 사용하여 패키지 이름을 만든다
+ 다른 조직의 패키지 이름과의 충돌을 피하게 해준다
+부서 프로젝트 컴퓨터 로긴 이름 등을 부가해서 패키지 이름을 만들 수 있다
+예 comABCprojectjgl
+java javax는 자바 표준 패키지 이름에만 사용할 수 있도록 예약되어 있다
+ 
+
+ 클래스 이름
+대문자로 시작하는 명사
+이름속에 포함된 각 단어 또한 대문자로 시작
+예 Thread Properties SecurityManager
+ 
+
+ 인터페이스 이름  ILoggerFactory
+대문자로 시작하는 혹은 접두사 I인터페이스를 의미를 붙인 명사 혹은 형용사
+이름속에 포함된 각 단어 또한 대문자로 시작
+예 DataInput Runnable
+ 
+
+ 메소드 이름
+
+소문자로 시작하는 동사
+이름속에 포함된 각 단어는 첫번째 단어를 제외하고 대문자로 시작
+
+타입 T인 v라는 이름의 속성을 접근하기 위한 메소드 이름 T getV void setVT val
+예 javaawtComponent의 void setNameString String getName
+
+ T가 boolean일 경우 getV 대신 isV일 수 있다
+예 javaawtComponent의 void setVisibleboolean boolean isVisible
+
+객체의 내용을 타입 Type으로 변환하여 반환하는 메소드 이름 Type toType
+예 javalangObject 클래스의 String toString
+ 
+
+ 상수가 아닌 인스턴스 변수 클래스 변수 이름
+소문자로 시작하는 명사 혹은 축약된 명사
+이름속에 포함된 각 단어는 첫번째 단어를 제외하고 대문자로 시작
+ 
+
+ 파이널 변수 기본 타입일 경우
+모두 대문자
+이름속에 포함된 각 단어사이는 을 삽입
+예 MINVALUE MAXVALUE PI
+ 
+
+ 지역 변수 매개 변수
+의미 있는 짧은 이름
+예 buf len c i j " />
 <!-- GOOGLE+ -->
 <meta itemprop="headline" content="Clean Code" />
 <meta itemprop="name" content="Clean Code" />
-<meta itemprop="description" content=" 자바기본문법
-java
-int a  10
-int b  20
-int c  a  b
-" />
+<meta itemprop="description" content=" 자바 프로그램 명명 규칙 권장안
+
+ 패키지 이름
+자신이 속한 조직의 인터넷 도메인 이름을 뒤집은 이름을 사용하여 패키지 이름을 만든다
+ 다른 조직의 패키지 이름과의 충돌을 피하게 해준다
+부서 프로젝트 컴퓨터 로긴 이름 등을 부가해서 패키지 이름을 만들 수 있다
+예 comABCprojectjgl
+java javax는 자바 표준 패키지 이름에만 사용할 수 있도록 예약되어 있다
+ 
+
+ 클래스 이름
+대문자로 시작하는 명사
+이름속에 포함된 각 단어 또한 대문자로 시작
+예 Thread Properties SecurityManager
+ 
+
+ 인터페이스 이름  ILoggerFactory
+대문자로 시작하는 혹은 접두사 I인터페이스를 의미를 붙인 명사 혹은 형용사
+이름속에 포함된 각 단어 또한 대문자로 시작
+예 DataInput Runnable
+ 
+
+ 메소드 이름
+
+소문자로 시작하는 동사
+이름속에 포함된 각 단어는 첫번째 단어를 제외하고 대문자로 시작
+
+타입 T인 v라는 이름의 속성을 접근하기 위한 메소드 이름 T getV void setVT val
+예 javaawtComponent의 void setNameString String getName
+
+ T가 boolean일 경우 getV 대신 isV일 수 있다
+예 javaawtComponent의 void setVisibleboolean boolean isVisible
+
+객체의 내용을 타입 Type으로 변환하여 반환하는 메소드 이름 Type toType
+예 javalangObject 클래스의 String toString
+ 
+
+ 상수가 아닌 인스턴스 변수 클래스 변수 이름
+소문자로 시작하는 명사 혹은 축약된 명사
+이름속에 포함된 각 단어는 첫번째 단어를 제외하고 대문자로 시작
+ 
+
+ 파이널 변수 기본 타입일 경우
+모두 대문자
+이름속에 포함된 각 단어사이는 을 삽입
+예 MINVALUE MAXVALUE PI
+ 
+
+ 지역 변수 매개 변수
+의미 있는 짧은 이름
+예 buf len c i j " />
 <meta itemprop="image" content="/img/logo/logo_opengraph.png" />
 
-<title>제목2 | Clean Code | ARTICLE DETAIL</title>
+<title>2강 자바 명명규칙 권장안????‍♀????‍♂???? | Clean Code | ARTICLE DETAIL</title>
 
 <!-- 폰트어썸 불러오기 -->
 <link rel="stylesheet"
@@ -139,7 +274,7 @@ int c  a  b
 								<span>ARTICLES</span>
 							</a>
 							<ul>
-								<li><a href="article_list_free_1.html" class="block"><i class="fab fa-free-code-camp"></i> <span>FREE LIST</span></a></li><li><a href="article_list_notice_1.html" class="block"><i class="fas fa-flag"></i> <span>NOTICE LIST</span></a></li>
+								<li><a href="article_list_MySQL_1.html" class="block"><i class="fab fa-java"></i> <span>MySQL LIST</span></a></li><li><a href="article_list_JAVA_1.html" class="block"><i class="fab fa-java"></i> <span>JAVA LIST</span></a></li>
 							</ul>
 						</li>
 						<li>
@@ -183,24 +318,69 @@ int c  a  b
 			</section><section class="section-1 con-min-width">
 	<div class="con">
 		<div class="article-detail">
-			<h2 class="article-detail__title">제목2</h2>
+			<h2 class="article-detail__title">2강 자바 명명규칙 권장안????‍♀????‍♂????</h2>
 
 			<div class="article-detail__sub-info flex">
-				<div class="article-detail__board-name">자유</div>
+				<div class="article-detail__board-name">JAVA</div>
 				<div class="article-detail__reg-date">2021-01-19 02:30:48</div>
-				<div class="article-detail__writer">테스터1</div>
+				<div class="article-detail__writer">이주영</div>
 				<div class="article-detail__hit-count">조회수 : 0</div>
 				<div class="article-detail__likes-count">추천수 : 0</div>
 				<div class="article-detail__comments-count">댓글수 : 1</div>
 			</div>
 
 			<script type="text/x-template">
-# 자바기본문법
-```java
-int a = 10;
-int b = 20;
-int c = a + b;
-```
+# 자바 프로그램 명명 규칙 권장안
+
+- 패키지 이름
+자신이 속한 조직의 인터넷 도메인 이름을 뒤집은 이름을 사용하여 패키지 이름을 만든다.
+⇒ 다른 조직의 패키지 이름과의 충돌을 피하게 해준다.
+부서, 프로젝트, 컴퓨터, 로긴 이름 등을 부가해서 패키지 이름을 만들 수 있다.
+예) com.ABCproject.jgl
+java, javax는 자바 표준 패키지 이름에만 사용할 수 있도록 예약되어 있다.
+ 
+
+- 클래스 이름
+대문자로 시작하는 명사.
+이름속에 포함된 각 단어 또한 대문자로 시작.
+예) Thread, Properties, SecurityManager
+ 
+
+- 인터페이스 이름 , ILoggerFactory
+대문자로 시작하는 혹은 접두사 I(인터페이스를 의미)를 붙인 명사 혹은 형용사
+이름속에 포함된 각 단어 또한 대문자로 시작.
+예) DataInput, Runnable
+ 
+
+- 메소드 이름
+
+소문자로 시작하는 동사
+이름속에 포함된 각 단어는 (첫번째 단어를 제외하고) 대문자로 시작
+
+타입 T인 v라는 이름의 속성을 접근하기 위한 메소드 이름: T getV(), void setV(T val)
+예) java.awt.Component의 void setName(String), String getName()
+
+※ T가 boolean일 경우, getV() 대신 isV()일 수 있다.
+예) java.awt.Component의 void setVisible(boolean), boolean isVisible()
+
+객체의 내용을 타입 Type으로 변환하여 반환하는 메소드 이름: Type toType()
+예) java.lang.Object 클래스의 String toString()
+ 
+
+- 상수가 아닌 인스턴스 변수, 클래스 변수 이름
+소문자로 시작하는 명사 (혹은 축약된 명사)
+이름속에 포함된 각 단어는 (첫번째 단어를 제외하고) 대문자로 시작
+ 
+
+- 파이널 변수 (기본 타입일 경우)
+모두 대문자
+이름속에 포함된 각 단어사이는 `_'을 삽입
+예) MIN_VALUE, MAX_VALUE, PI
+ 
+
+- 지역 변수, 매개 변수
+의미 있는 짧은 이름
+예) buf, len, c, i, j, ...
 			</script>
 			<div class="article-detail__body main-font toast-ui-viewer"></div>
 
@@ -226,15 +406,15 @@ int c = a + b;
 			</div>
 
 			<div class="article-detail__menu flex">
-				<a title="제목1"
+				<a title="1강 자바 코드 표준화의 필요성????‍♀????‍♂????????‍♀????"
 					href="article_detail_1.html"
 					class="hover-underline ">&lt;
 					이전글</a>
-				<a href="article_list_free_1.html"
+				<a href="article_list_JAVA_1.html"
 					class="hover-underline ">목록</a>
-				<a title=""
-					href="article_detail_0.html"
-					class="hover-underline none">다음글
+				<a title="3강 Clean Code????‍♀????‍♂????"
+					href="article_detail_3.html"
+					class="hover-underline ">다음글
 					&gt;</a>
 			</div>
 		</div>
