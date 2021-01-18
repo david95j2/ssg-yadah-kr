@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8QZL06CJKE"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JJ0CQVRGV4"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-8QZL06CJKE');
+  gtag('config', 'G-JJ0CQVRGV4');
 </script>
 <meta charset="UTF-8" />
 
@@ -22,140 +22,205 @@
 <meta name="title" content="Clean Code" />
 <meta name="keywords" content="HTML, CSS, JAVASCRIPT, JAVA, SPRING, MySQL, 리눅스, 리액트" />
 <meta name="copyright" content="Clean Code" />
-<meta name="pubdate" content="2021-01-14T01:50:41" />
-<meta name="lastmod" content="2021-01-14T01:50:41" />
+<meta name="pubdate" content="2021-01-19T02:32:04" />
+<meta name="lastmod" content="2021-01-19T02:32:04" />
 <!-- OPENGRAPH -->
 <meta property="og:site_name" content="Clean Code" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="개발자의 기술/일상 블로그" />
 <meta property="og:description" content="개발자의 기술/일상 관련 글들을 공유합니다." />
 <meta property="og:locale" content="ko_KR" />
-<meta property="og:image" content="/images/logo_opengraph.png" />
+<meta property="og:image" content="https://ssg.yadah.kr/img/logo/logo_opengraph.png" />
 <meta property="og:image:alt" content="ssg.yadah.kr" />
 <meta property="og:image:width" content="486" />
-<meta property="og:image:height" content="254" />
-<meta property="og:updated_time" content="2021-01-14T01:50:41"/>
-<meta property="og:pubdate" content="2021-01-14T01:50:41" />
+<meta property="og:image:height" content="324" />
+<meta property="og:updated_time" content="2021-01-19T02:32:04"/>
+<meta property="og:pubdate" content="2021-01-19T02:32:04" />
 <meta property="og:url" content="https://ssg.yadah.kr" />
 <!-- TWITTER -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="개발자의 기술/일상 블로그" />
 <meta name="twitter:site" content="@Clean Code" />
 <meta name="twitter:creator" content="@Clean Code" />
-<meta name="twitter:image" content="/images/logo_opengraph.png">
+<meta name="twitter:image" content="/img/logo/logo_opengraph.png">
 <meta name="twitter:description" content="개발자의 기술/일상 관련 글들을 공유합니다." />
 <!-- GOOGLE+ -->
 <meta itemprop="headline" content="Clean Code" />
 <meta itemprop="name" content="Clean Code" />
 <meta itemprop="description" content="개발자의 기술/일상 관련 글들을 공유합니다." />
-<meta itemprop="image" content="/images/logo_opengraph.png" />
+<meta itemprop="image" content="/img/logo/logo_opengraph.png" />
 
 <title>Clean Code | ARTICLE SEARCH</title>
+
 <!-- 폰트어썸 불러오기 -->
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-<script data-ad-client="pub-3140812701998315" async src="https://pagead2.googlesyndication.com/
-pagead/js/adsbygoogle.js"></script>
+
+<!-- <meta name="google-site-verification" content="kBMgTjO9loCuIJUFRTfJvTKiT6ojjWL_x_lpxGtM-6c" /> -->
+
+<link rel="icon" href="favicon.ico"/>
+
+<!-- 제이쿼리 불러오기 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- 하이라이트 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/default.min.css">
+
+<!-- 토스트 UI 에디터, 자바스크립트 코어 -->
+<script
+	src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js" defer></script>
+
+<!-- 코드 미러 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/codemirror.min.css" />
+<!-- 토스트 UI 에디터, CSS 코어 -->
+<link rel="stylesheet"
+	href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
+
+<!-- 토스트 UI 에디터, 신택스 하이라이트 플러그인 추가 -->
+<script
+	src="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/toastui-editor-plugin-code-syntax-highlight.min.js" defer></script>
+
 <link rel="stylesheet" href="app.css" />
-<link rel="shorcut icon" href="../site_template/images/pavicon.svg" />
+<script src="app.js" defer></script>
+
+</head>
 <body>
-		<!-- 메뉴바 시작 -->
-		<header>
-			<div class="container clearfix">
-			  <h1 class="logo"><a href="">Clean&Code logo</a></h1>
-			  <nav class="clearfix">
-				<ul class="main-menu">
-				  <li><a href="index.html" class="active">Home</a></li>
-				  <li><a href="article_list_java_1.html">Articles</a></li>
-				  <li><a href="https://david95j2.tistory.com/">Blog</a></li>
-				  <li><a href="https://github.com/david95j2">Github</a></li>
-				  <li><a href="">STATISTICS</a></li>
-				</ul>
-				<ul class="top-icons">
-				  <!--<li><a href=""><i class="fas fa-shopping-bag"></i></a></li>-->
-				  <li><a href=""><i class="fas fa-search"></i></a></li>
-				</ul>
-				<span class="toggle"><i class="fas fa-bars"></i></span>
-			  </nav>
+	<div class="body-content min-height-100vh flex flex-column">
+		<!-- 로고바 시작 -->
+		<header class="logo-bar con-min-width">
+			<div class="con height-100p flex flex-jc-c">
+				<a href="#" class="logo flex flex-ai-c">
+					<i class="fab fa-jenkins"></i>
+					<span>Clean Code</span>
+				</a>
 			</div>
-		  </header>	  
+		</header>
+		<!-- 로고바 끝 -->
+
+		<!-- 메뉴바 시작 -->
+		<header class="menu-bar con-min-width">
+			<div class="con height-100p">
+				<nav class="menu-bar__menu-1">
+					<ul class="flex">
+						<li>
+							<a href="./" class="block">
+								<i class="fas fa-home"></i>
+								<span>HOME</span>
+							</a>
+						</li>
+						<li>
+							<a href="./article_search.html" class="block">
+								<i class="fas fa-search"></i>
+								<span>검색</span>
+							</a>
+						</li>
+						<li>
+							<a class="block">
+								<i class="fas fa-list"></i>
+								<span>ARTICLES</span>
+							</a>
+							<ul>
+								<li><a href="article_list_free_1.html" class="block"><i class="fab fa-free-code-camp"></i> <span>FREE LIST</span></a></li><li><a href="article_list_notice_1.html" class="block"><i class="fas fa-flag"></i> <span>NOTICE LIST</span></a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="block">
+								<i class="fas fa-link"></i>
+								<span>LINK</span>
+							</a>
+							<ul>
+								<li>
+									<a href="https://jhs512.github.io/blog/" target="_blank"
+										class="block">
+										<i class="fab fa-blogger-b"></i>
+										<span>BLOG</span>
+									</a>
+								</li>
+								<li>
+									<a href="https://github.com/" target="_blank" class="block">
+										<i class="fab fa-github"></i>
+										<span>GITHUB</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="stat.html" class="block">
+								<i class="fas fa-chart-pie"></i>
+								<span>STATISTICS</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
 		<!-- 메뉴바 끝 -->
 
 		<main class="flex-grow-1">
-			<main class="content">
-				<section class="services container clearfix">
-				  <div class="service_item">
-					<span class="icon"></span>
-					<h4></h4>
-					<p></p>
-					<span class="status"></span>
-				  </div>
-				  <div class="service_item">
-					<span class="icon"></span>
-					<h4></h4>
-					<p></p>
-					<span class="status"></span>
-				  </div>
-				  <div class="service_item">
-					<span class="icon"></span>
-					<h4></h4>
-					<p></p>
-					<span class="status"></span>
-				  </div>
-				  <div class="service_item">
-					<span class="icon"></span>
-					<h4></h4>
-					<p></p>
-					<span class="status"></span>
-				  </div>
-				  
-				</section><!--//services-->
-null</main>
+			<section class="title-bar con-min-width">
+				<h1 class="con">
+					<i class="fas fa-search"></i> <span>ARTICLE SEARCH</span>
+				</h1>
+			</section><!-- lodash 불러오기 -->
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"></script>
 
-<footer>
-	<div class="footer_top">
-	  <div class="container">
-		<div class="col-one-forth">
-		  <h2 class="footer_logo"><a href=""></a></h2>
-		  <p></p>
-		  <a href=""><span><i class=""></i></span></a>
-		</div>
-		<div class="col-one-forth">
-		  <h3></h3>
-		  <ul>
-			<li></li>
-		  </ul>
-		</div>
-		<div class="col-one-forth">
-		  <h3></h3>
-		  <ul>
-			<li></li>
-		  </ul>
-		</div>
-		<div class="col-one-forth">
-		  <h3></h3>
-		  <ul>
-			<li><a href=""><img src="" alt=""></a></li>
-		  </ul>
-		</div>
-	  </div>
-	</div>
-	<div class="footer_bottom">
-	  <div class="container clearfix">
-		<div class="footer_logo">
-		  <a href=""></a>
-		</div>
-		<div class="copy">
-		  <p>Copyright &copy; 2020 <span>Clean Code</span> <span class="devider">&#124;</span> <a href="">Privacy Policy</a> &#124;
-		  <a href="">FAQ</a> <span class="devider">&#124;</span> <a href="">Support</a></p>
-		</div>
-		<div class="designer">
-		  <p>Designed by <a href="">Ju Yeong</a> &#124; only on <a href="">Devloper's blog</a></p>
-		</div>
-	  </div>
-	</div>
-  </footer>
+<!-- vue 불러오기 -->
+<!-- 개발버전, 도움되는 콘솔 경고를 포함. -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
-<script src="app.js"></script>
+<section v-cloak id="article-list-wrap" class="section-1 con-min-width">
+	<div class="con">
+		<div class="article-search">
+			<form class="block">
+				<input @input="searchKeywordInputed" type="text" placeholder="검색어"
+					:value="searchKeyword">
+			</form>
+		</div>
+		<div class="article-list">
+			<header>
+				<div>
+					<div class="article-list__cell-id">번호</div>
+					<div class="article-list__cell-reg-date">날짜</div>
+					<div class="article-list__cell-writer">작성자</div>
+					<div class="article-list__cell-title">제목</div>
+				</div>
+			</header>
+			<div class="main">
+				<div v-for="article in filtered">
+					<div class="article-list__cell-id">{{article.getId()}}</div>
+					<div class="article-list__cell-reg-date">{{article.getRegDate()}}</div>
+					<div class="article-list__cell-writer">{{article.writer}}</div>
+					<div class="article-list__cell-title">
+						<a :href="'article_detail_' + article.getId() + '.html'" target="_blank"
+							class="hover-underline">{{article.getTitle()}}</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script src="article_search.js"></script>
+</main>
+
+<footer class="bottom-bar con-min-width">
+	<div class="con flex flex-ai-c">
+		<a href="#" class="logo logo--mini flex flex-ai-c">
+			<i class="fab fa-jenkins"></i>
+			<span>Clean Code</span>
+		</a>
+
+		<div class="bottom-bar__site-info">Lorem ipsum dolor sit amet
+			consectetur adipisicing elit. Dolorum eos ipsum necessitatibus
+			doloremque quos voluptate debitis earum aut a consequuntur explicabo
+			deleniti qui eius facere, harum error eveniet vel laudantium.</div>
+	</div>
+</footer>
+</div>
 </body>
 </html>
