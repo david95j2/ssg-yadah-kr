@@ -18,7 +18,7 @@
 <!-- 메타태그정보 //-->
 <!-- META -->
 <link rel="canonical" href="https://ssg.yadah.kr" />
-<meta name="subject" content="개발자의 기술/일상 블로그"/>
+<meta name="subject" content="프로세스와 쓰레드"/>
 <meta name="title" content="Clean Code" />
 <meta name="keywords" content="HTML, CSS, JAVASCRIPT, JAVA, SPRING, MySQL, 리눅스, 리액트" />
 <meta name="copyright" content="Clean Code" />
@@ -27,8 +27,15 @@
 <!-- OPENGRAPH -->
 <meta property="og:site_name" content="Clean Code" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="개발자의 기술/일상 블로그" />
-<meta property="og:description" content="개발자의 기술/일상 관련 글들을 공유합니다." />
+<meta property="og:title" content="프로세스와 쓰레드" />
+<meta property="og:description" content=" 프로세스Process와 쓰레드Thread
+
+imagehttpsimg1daumcdnnetthumbR1280x0scodemtistory2fnamehttpsblogkakaocdnnetdnbYa0g0btqUYfQLgRCt7kcQBF5yVvvGfoG9vsYC0imgjpg
+
+     프로세스는 메모리에 적재되어 실행중인 프로그램 인스턴스이며 이와 비교되는 개념이 쓰레드이다
+     
+
+    프로세스는 위 사진과 같이 메모리를 통으로 가지는 반면에 쓰레드는 메모리를 공유하고 만드는데도 시간이 상대적으로 적게 걸린다" />
 <meta property="og:locale" content="ko_KR" />
 <meta property="og:image" content="https://ssg.yadah.kr/images/logo_opengraph.png" />
 <meta property="og:image:alt" content="ssg.yadah.kr" />
@@ -39,18 +46,32 @@
 <meta property="og:url" content="https://ssg.yadah.kr" />
 <!-- TWITTER -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="개발자의 기술/일상 블로그" />
+<meta name="twitter:title" content="프로세스와 쓰레드" />
 <meta name="twitter:site" content="@Clean Code" />
 <meta name="twitter:creator" content="@Clean Code" />
 <meta name="twitter:image" content="/images/logo_opengraph.png">
-<meta name="twitter:description" content="개발자의 기술/일상 관련 글들을 공유합니다." />
+<meta name="twitter:description" content=" 프로세스Process와 쓰레드Thread
+
+imagehttpsimg1daumcdnnetthumbR1280x0scodemtistory2fnamehttpsblogkakaocdnnetdnbYa0g0btqUYfQLgRCt7kcQBF5yVvvGfoG9vsYC0imgjpg
+
+     프로세스는 메모리에 적재되어 실행중인 프로그램 인스턴스이며 이와 비교되는 개념이 쓰레드이다
+     
+
+    프로세스는 위 사진과 같이 메모리를 통으로 가지는 반면에 쓰레드는 메모리를 공유하고 만드는데도 시간이 상대적으로 적게 걸린다" />
 <!-- GOOGLE+ -->
 <meta itemprop="headline" content="Clean Code" />
 <meta itemprop="name" content="Clean Code" />
-<meta itemprop="description" content="개발자의 기술/일상 관련 글들을 공유합니다." />
+<meta itemprop="description" content=" 프로세스Process와 쓰레드Thread
+
+imagehttpsimg1daumcdnnetthumbR1280x0scodemtistory2fnamehttpsblogkakaocdnnetdnbYa0g0btqUYfQLgRCt7kcQBF5yVvvGfoG9vsYC0imgjpg
+
+     프로세스는 메모리에 적재되어 실행중인 프로그램 인스턴스이며 이와 비교되는 개념이 쓰레드이다
+     
+
+    프로세스는 위 사진과 같이 메모리를 통으로 가지는 반면에 쓰레드는 메모리를 공유하고 만드는데도 시간이 상대적으로 적게 걸린다" />
 <meta itemprop="image" content="/images/logo_opengraph.png" />
 
-<title>Clean Code | HOME</title>
+<title>프로세스와 쓰레드 | Clean Code | ARTICLE DETAIL</title>
 
 <!-- 폰트어썸 불러오기 -->
 <link rel="stylesheet"
@@ -203,10 +224,72 @@
 			<section class="serve-menu-bg"></section>
 			<section class="title-bar con-min-width">
 				<h1 class="con">
-					<i class="fas fa-home"></i> <span>HOME</span>
+					<i class="fas fa-file-alt"></i> <span>ARTICLE DETAIL</span>
 				</h1>
 			</section><section class="section-1 con-min-width">
-</section></main>
+	<div class="con">
+		<div class="article-detail">
+			<h2 class="article-detail__title">프로세스와 쓰레드</h2>
+
+			<div class="article-detail__sub-info flex">
+				<div class="article-detail__board-name">JAVA</div>
+				<div class="article-detail__reg-date">2021-01-29 00:55:59</div>
+				<div class="article-detail__writer">이주영</div>
+				<div class="article-detail__hit-count">조회수 : 0</div>
+				<div class="article-detail__likes-count">추천수 : 0</div>
+				<div class="article-detail__comments-count">댓글수 : 0</div>
+			</div>
+
+			<script type="text/x-template">
+# 프로세스(Process)와 쓰레드(Thread)
+
+![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https://blog.kakaocdn.net/dn/bYa0g0/btqUYfQLgRC/t7kcQBF5yVvvGfoG9vsYC0/img.jpg)
+
+     프로세스는 메모리에 적재되어 실행중인 프로그램 인스턴스이며, 이와 비교되는 개념이 쓰레드이다.
+     
+
+    프로세스는 위 사진과 같이 메모리를 통으로 가지는 반면에 쓰레드는 메모리를 공유하고 만드는데도 시간이 상대적으로 적게 걸린다.
+			</script>
+			<div class="article-detail__body main-font toast-ui-viewer"></div>
+
+			<div class="article-detail__reply-box">
+				<div id="disqus_thread"></div>
+				<script>
+					var disqus_config = function () {
+				        this.page.url = 'https://ssg.yadah.kr/article_detail_11.html';
+				        this.page.identifier = 'article_detail_11.html';
+				    };
+					(function() { // DON'T EDIT BELOW THIS LINE
+						var d = document, s = d.createElement('script');
+						s.src = 'https://my-ssg-1.disqus.com/embed.js';
+						s.setAttribute('data-timestamp', +new Date());
+						(d.head || d.body).appendChild(s);
+					})();
+				</script>
+				<noscript>
+					Please enable JavaScript to view the
+					<a href="https://disqus.com/?ref_noscript">comments powered by
+						Disqus.</a>
+				</noscript>
+			</div>
+
+			<div class="article-detail__menu flex">
+				<a title="Servlet vs Spring"
+					href="article_detail_10.html"
+					class="hover-underline ">&lt;
+					이전글</a>
+				<a href="article_list_JAVA_1.html"
+					class="hover-underline ">목록</a>
+				<a title=""
+					href="article_detail_0.html"
+					class="hover-underline none">다음글
+					&gt;</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+</main>
     <footer>
       <div class="footer_top">
         <div class="container">

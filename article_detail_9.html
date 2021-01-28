@@ -18,7 +18,7 @@
 <!-- 메타태그정보 //-->
 <!-- META -->
 <link rel="canonical" href="https://ssg.yadah.kr" />
-<meta name="subject" content="개발자의 기술/일상 블로그"/>
+<meta name="subject" content="JSP와 서블릿(Servlet)"/>
 <meta name="title" content="Clean Code" />
 <meta name="keywords" content="HTML, CSS, JAVASCRIPT, JAVA, SPRING, MySQL, 리눅스, 리액트" />
 <meta name="copyright" content="Clean Code" />
@@ -27,8 +27,48 @@
 <!-- OPENGRAPH -->
 <meta property="og:site_name" content="Clean Code" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="개발자의 기술/일상 블로그" />
-<meta property="og:description" content="개발자의 기술/일상 관련 글들을 공유합니다." />
+<meta property="og:title" content="JSP와 서블릿(Servlet)" />
+<meta property="og:description" content=" JSP의 개요
+
+ 특징
+
+     강력한 이식성
+     서버 자원의 효율적인 사용
+     간편한 MVC 패턴 적용
+     JSTL 커스텀 태그 드을 이용한 개발 용이성
+
+
+ 서블릿Servlet의 개요
+
+      웹 서버 상에서 실행되는 자바의 클래스 파일
+     javaxservletServlet 인터페이스를 구현Implements해서 작성 
+       입력과 출력을 HTTP 프로토콜의 요청Request과 응답Response 의 형태로 다룬다
+
+
+
+ Servlet과 JSP의 차이
+
+ Servlet
+
+        Java 코드 안에 HTML 코드 하나의 클래스
+
+        data processingController에 좋다
+
+       즉 DB와의 통신 Business Logic 호출 데이터를 읽고 확인하는 작업 등에 유용하다
+
+        Servlet이 수정된 경우 Java 코드를 컴파일class 파일 생성한 후 동적인 페이지를 처리하기 때문에 전체 코드를 업데이트하고 다시 컴파일한 후 재배포하는 작업이 필요하다 개발 생산성 저하
+
+
+ JSP
+
+        HTML 코드 안에 Java 코드
+
+        presentationView에 좋다
+
+       즉 요청 결과를 나타내는 HTML 작성하는데 유용하다
+
+        JSP가 수정된 경우 재배포할 필요가 없이 WAS가 알아서 처리한다 쉬운 배포
+" />
 <meta property="og:locale" content="ko_KR" />
 <meta property="og:image" content="https://ssg.yadah.kr/images/logo_opengraph.png" />
 <meta property="og:image:alt" content="ssg.yadah.kr" />
@@ -39,18 +79,98 @@
 <meta property="og:url" content="https://ssg.yadah.kr" />
 <!-- TWITTER -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="개발자의 기술/일상 블로그" />
+<meta name="twitter:title" content="JSP와 서블릿(Servlet)" />
 <meta name="twitter:site" content="@Clean Code" />
 <meta name="twitter:creator" content="@Clean Code" />
 <meta name="twitter:image" content="/images/logo_opengraph.png">
-<meta name="twitter:description" content="개발자의 기술/일상 관련 글들을 공유합니다." />
+<meta name="twitter:description" content=" JSP의 개요
+
+ 특징
+
+     강력한 이식성
+     서버 자원의 효율적인 사용
+     간편한 MVC 패턴 적용
+     JSTL 커스텀 태그 드을 이용한 개발 용이성
+
+
+ 서블릿Servlet의 개요
+
+      웹 서버 상에서 실행되는 자바의 클래스 파일
+     javaxservletServlet 인터페이스를 구현Implements해서 작성 
+       입력과 출력을 HTTP 프로토콜의 요청Request과 응답Response 의 형태로 다룬다
+
+
+
+ Servlet과 JSP의 차이
+
+ Servlet
+
+        Java 코드 안에 HTML 코드 하나의 클래스
+
+        data processingController에 좋다
+
+       즉 DB와의 통신 Business Logic 호출 데이터를 읽고 확인하는 작업 등에 유용하다
+
+        Servlet이 수정된 경우 Java 코드를 컴파일class 파일 생성한 후 동적인 페이지를 처리하기 때문에 전체 코드를 업데이트하고 다시 컴파일한 후 재배포하는 작업이 필요하다 개발 생산성 저하
+
+
+ JSP
+
+        HTML 코드 안에 Java 코드
+
+        presentationView에 좋다
+
+       즉 요청 결과를 나타내는 HTML 작성하는데 유용하다
+
+        JSP가 수정된 경우 재배포할 필요가 없이 WAS가 알아서 처리한다 쉬운 배포
+" />
 <!-- GOOGLE+ -->
 <meta itemprop="headline" content="Clean Code" />
 <meta itemprop="name" content="Clean Code" />
-<meta itemprop="description" content="개발자의 기술/일상 관련 글들을 공유합니다." />
+<meta itemprop="description" content=" JSP의 개요
+
+ 특징
+
+     강력한 이식성
+     서버 자원의 효율적인 사용
+     간편한 MVC 패턴 적용
+     JSTL 커스텀 태그 드을 이용한 개발 용이성
+
+
+ 서블릿Servlet의 개요
+
+      웹 서버 상에서 실행되는 자바의 클래스 파일
+     javaxservletServlet 인터페이스를 구현Implements해서 작성 
+       입력과 출력을 HTTP 프로토콜의 요청Request과 응답Response 의 형태로 다룬다
+
+
+
+ Servlet과 JSP의 차이
+
+ Servlet
+
+        Java 코드 안에 HTML 코드 하나의 클래스
+
+        data processingController에 좋다
+
+       즉 DB와의 통신 Business Logic 호출 데이터를 읽고 확인하는 작업 등에 유용하다
+
+        Servlet이 수정된 경우 Java 코드를 컴파일class 파일 생성한 후 동적인 페이지를 처리하기 때문에 전체 코드를 업데이트하고 다시 컴파일한 후 재배포하는 작업이 필요하다 개발 생산성 저하
+
+
+ JSP
+
+        HTML 코드 안에 Java 코드
+
+        presentationView에 좋다
+
+       즉 요청 결과를 나타내는 HTML 작성하는데 유용하다
+
+        JSP가 수정된 경우 재배포할 필요가 없이 WAS가 알아서 처리한다 쉬운 배포
+" />
 <meta itemprop="image" content="/images/logo_opengraph.png" />
 
-<title>Clean Code | HOME</title>
+<title>JSP와 서블릿(Servlet) | Clean Code | ARTICLE DETAIL</title>
 
 <!-- 폰트어썸 불러오기 -->
 <link rel="stylesheet"
@@ -203,10 +323,105 @@
 			<section class="serve-menu-bg"></section>
 			<section class="title-bar con-min-width">
 				<h1 class="con">
-					<i class="fas fa-home"></i> <span>HOME</span>
+					<i class="fas fa-file-alt"></i> <span>ARTICLE DETAIL</span>
 				</h1>
 			</section><section class="section-1 con-min-width">
-</section></main>
+	<div class="con">
+		<div class="article-detail">
+			<h2 class="article-detail__title">JSP와 서블릿(Servlet)</h2>
+
+			<div class="article-detail__sub-info flex">
+				<div class="article-detail__board-name">JAVA</div>
+				<div class="article-detail__reg-date">2021-01-28 23:43:25</div>
+				<div class="article-detail__writer">이주영</div>
+				<div class="article-detail__hit-count">조회수 : 0</div>
+				<div class="article-detail__likes-count">추천수 : 0</div>
+				<div class="article-detail__comments-count">댓글수 : 0</div>
+			</div>
+
+			<script type="text/x-template">
+# JSP의 개요
+
+## 특징
+
+    • 강력한 이식성
+    • 서버 자원의 효율적인 사용
+    • 간편한 MVC 패턴 적용
+    • JSTL, 커스텀 태그 드을 이용한 개발 용이성
+
+
+# ​서블릿(Servlet)의 개요
+
+    •  웹 서버 상에서 실행되는 자바의 클래스 파일
+    • javax.servlet.Servlet 인터페이스를 구현(Implements)해서 작성 
+      • 입력과 출력을 HTTP 프로토콜의 요청(Request)과 응답(Response) 의 형태로 다룬다
+
+
+
+# Servlet과 JSP의 차이
+
+## Servlet
+
+      •  Java 코드 안에 HTML 코드 (하나의 클래스)
+
+      •  data processing(Controller)에 좋다.
+
+      => 즉 DB와의 통신, Business Logic 호출, 데이터를 읽고 확인하는 작업 등에 유용하다.
+
+      •  Servlet이 수정된 경우 Java 코드를 컴파일(.class 파일 생성)한 후 동적인 페이지를 처리하기 때문에 전체 코드를 업데이트하고 다시 컴파일한 후 재배포하는 작업이 필요하다. (개발 생산성 저하)
+
+
+## JSP
+
+      •  HTML 코드 안에 Java 코드
+
+      •  presentation(View)에 좋다.
+
+      => 즉 요청 결과를 나타내는 HTML 작성하는데 유용하다.
+
+      •  JSP가 수정된 경우 재배포할 필요가 없이 WAS가 알아서 처리한다. (쉬운 배포)
+
+			</script>
+			<div class="article-detail__body main-font toast-ui-viewer"></div>
+
+			<div class="article-detail__reply-box">
+				<div id="disqus_thread"></div>
+				<script>
+					var disqus_config = function () {
+				        this.page.url = 'https://ssg.yadah.kr/article_detail_9.html';
+				        this.page.identifier = 'article_detail_9.html';
+				    };
+					(function() { // DON'T EDIT BELOW THIS LINE
+						var d = document, s = d.createElement('script');
+						s.src = 'https://my-ssg-1.disqus.com/embed.js';
+						s.setAttribute('data-timestamp', +new Date());
+						(d.head || d.body).appendChild(s);
+					})();
+				</script>
+				<noscript>
+					Please enable JavaScript to view the
+					<a href="https://disqus.com/?ref_noscript">comments powered by
+						Disqus.</a>
+				</noscript>
+			</div>
+
+			<div class="article-detail__menu flex">
+				<a title="5강 스레드(Thread)"
+					href="article_detail_5.html"
+					class="hover-underline ">&lt;
+					이전글</a>
+				<a href="article_list_JAVA_1.html"
+					class="hover-underline ">목록</a>
+				<a title="Servlet vs Spring"
+					href="article_detail_10.html"
+					class="hover-underline ">다음글
+					&gt;</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+</main>
     <footer>
       <div class="footer_top">
         <div class="container">
