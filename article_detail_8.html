@@ -18,45 +18,186 @@
 <!-- 메타태그정보 //-->
 <!-- META -->
 <link rel="canonical" href="https://ssg.yadah.kr" />
-<meta name="subject" content="JSP 개발일지 기본기능"/>
+<meta name="subject" content="[JSP 개발일지] 프레임워크, 로그인/로그아웃, 회원가입 기능 구현"/>
 <meta name="title" content="Clean Code" />
 <meta name="keywords" content="HTML, CSS, JAVASCRIPT, JAVA, SPRING, MySQL, 리눅스, 리액트" />
 <meta name="copyright" content="Clean Code" />
-<meta name="pubdate" content="2021-01-29T01:16:23" />
-<meta name="lastmod" content="2021-01-29T01:16:23" />
+<meta name="pubdate" content="2021-01-29T03:32:45" />
+<meta name="lastmod" content="2021-01-29T03:32:45" />
 <!-- OPENGRAPH -->
 <meta property="og:site_name" content="Clean Code" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="JSP 개발일지 기본기능" />
-<meta property="og:description" content=" JSP 블로그 개발일지
+<meta property="og:title" content="[JSP 개발일지] 프레임워크, 로그인/로그아웃, 회원가입 기능 구현" />
+<meta property="og:description" content=" JSP 개발일지 프레임워크 로그인로그아웃 회원가입 기능 구현
 
- 기본기능" />
+youtube
+mjhxVtS1CA
+
+
+ 완료리스트
+ x 프레임워크 구현
+ x 로그인로그아웃
+ x 회원가입
+
+ 당장 할일 리스트
+   게시글 CRUD
+   인터셉터
+   로그인로그아웃 상태 관련 권한체크
+
+
+
+ 추후 할일 리스트
+   게시물 수정삭제 관련 권한체크
+   비밀번호 암호화
+   아이디찾기
+   비번찾기임시패스워드 발송
+   게시물 페이징
+   게시물 검색
+   토스트 에디터 붙이기
+   회원정보 수정
+   게시물 블라인드
+   좋아요 싫어요
+   내 글에 새 댓글 알림
+   내 댓글에 추가 댓글 알림
+   댓글
+   댓글멘션
+   대댓글
+   태그
+   댓글 ajax화
+   파일업로드
+   회원인증
+   관리자페이지
+   11 쪽지
+   신고
+
+
+
+
+
+
+
+
+" />
 <meta property="og:locale" content="ko_KR" />
 <meta property="og:image" content="https://ssg.yadah.kr/images/logo_opengraph.png" />
 <meta property="og:image:alt" content="ssg.yadah.kr" />
 <meta property="og:image:width" content="486" />
 <meta property="og:image:height" content="324" />
-<meta property="og:updated_time" content="2021-01-29T01:16:23"/>
-<meta property="og:pubdate" content="2021-01-29T01:16:23" />
+<meta property="og:updated_time" content="2021-01-29T03:32:45"/>
+<meta property="og:pubdate" content="2021-01-29T03:32:45" />
 <meta property="og:url" content="https://ssg.yadah.kr" />
 <!-- TWITTER -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="JSP 개발일지 기본기능" />
+<meta name="twitter:title" content="[JSP 개발일지] 프레임워크, 로그인/로그아웃, 회원가입 기능 구현" />
 <meta name="twitter:site" content="@Clean Code" />
 <meta name="twitter:creator" content="@Clean Code" />
 <meta name="twitter:image" content="/images/logo_opengraph.png">
-<meta name="twitter:description" content=" JSP 블로그 개발일지
+<meta name="twitter:description" content=" JSP 개발일지 프레임워크 로그인로그아웃 회원가입 기능 구현
 
- 기본기능" />
+youtube
+mjhxVtS1CA
+
+
+ 완료리스트
+ x 프레임워크 구현
+ x 로그인로그아웃
+ x 회원가입
+
+ 당장 할일 리스트
+   게시글 CRUD
+   인터셉터
+   로그인로그아웃 상태 관련 권한체크
+
+
+
+ 추후 할일 리스트
+   게시물 수정삭제 관련 권한체크
+   비밀번호 암호화
+   아이디찾기
+   비번찾기임시패스워드 발송
+   게시물 페이징
+   게시물 검색
+   토스트 에디터 붙이기
+   회원정보 수정
+   게시물 블라인드
+   좋아요 싫어요
+   내 글에 새 댓글 알림
+   내 댓글에 추가 댓글 알림
+   댓글
+   댓글멘션
+   대댓글
+   태그
+   댓글 ajax화
+   파일업로드
+   회원인증
+   관리자페이지
+   11 쪽지
+   신고
+
+
+
+
+
+
+
+
+" />
 <!-- GOOGLE+ -->
 <meta itemprop="headline" content="Clean Code" />
 <meta itemprop="name" content="Clean Code" />
-<meta itemprop="description" content=" JSP 블로그 개발일지
+<meta itemprop="description" content=" JSP 개발일지 프레임워크 로그인로그아웃 회원가입 기능 구현
 
- 기본기능" />
+youtube
+mjhxVtS1CA
+
+
+ 완료리스트
+ x 프레임워크 구현
+ x 로그인로그아웃
+ x 회원가입
+
+ 당장 할일 리스트
+   게시글 CRUD
+   인터셉터
+   로그인로그아웃 상태 관련 권한체크
+
+
+
+ 추후 할일 리스트
+   게시물 수정삭제 관련 권한체크
+   비밀번호 암호화
+   아이디찾기
+   비번찾기임시패스워드 발송
+   게시물 페이징
+   게시물 검색
+   토스트 에디터 붙이기
+   회원정보 수정
+   게시물 블라인드
+   좋아요 싫어요
+   내 글에 새 댓글 알림
+   내 댓글에 추가 댓글 알림
+   댓글
+   댓글멘션
+   대댓글
+   태그
+   댓글 ajax화
+   파일업로드
+   회원인증
+   관리자페이지
+   11 쪽지
+   신고
+
+
+
+
+
+
+
+
+" />
 <meta itemprop="image" content="/images/logo_opengraph.png" />
 
-<title>JSP 개발일지 기본기능 | Clean Code | ARTICLE DETAIL</title>
+<title>[JSP 개발일지] 프레임워크, 로그인/로그아웃, 회원가입 기능 구현 | Clean Code | ARTICLE DETAIL</title>
 
 <!-- 폰트어썸 불러오기 -->
 <link rel="stylesheet"
@@ -214,7 +355,7 @@
 			</section><section class="section-1 con-min-width">
 	<div class="con">
 		<div class="article-detail">
-			<h2 class="article-detail__title">JSP 개발일지 기본기능</h2>
+			<h2 class="article-detail__title">[JSP 개발일지] 프레임워크, 로그인/로그아웃, 회원가입 기능 구현</h2>
 
 			<div class="article-detail__sub-info flex">
 				<div class="article-detail__board-name">개발일지</div>
@@ -226,9 +367,56 @@
 			</div>
 
 			<script type="text/x-template">
-# JSP 블로그 개발일지
+# [JSP 개발일지] 프레임워크, 로그인/로그아웃, 회원가입 기능 구현
 
-## 기본기능
+```youtube
+mjhxVtS1_CA
+```
+
+# 완료리스트
+- [x] 프레임워크 구현
+- [x] 로그인/로그아웃
+- [x] 회원가입
+
+# 당장 할일 리스트
+- [ ] 게시글 CRUD
+- [ ] 인터셉터
+- [ ] 로그인/로그아웃 상태 관련 권한체크
+
+
+
+# 추후 할일 리스트
+- [ ] 게시물 수정/삭제 관련 권한체크
+- [ ] 비밀번호 암호화
+- [ ] 아이디찾기
+- [ ] 비번찾기(임시패스워드 발송)
+- [ ] 게시물 페이징
+- [ ] 게시물 검색
+- [ ] 토스트 에디터 붙이기
+- [ ] 회원정보 수정
+- [ ] 게시물 블라인드
+- [ ] 좋아요, 싫어요
+- [ ] 내 글에 새 댓글 알림
+- [ ] 내 댓글에 추가 댓글 알림
+- [ ] 댓글
+- [ ] 댓글멘션
+- [ ] 대댓글
+- [ ] 태그
+- [ ] 댓글, ajax화
+- [ ] 파일업로드
+- [ ] 회원인증
+- [ ] 관리자페이지
+- [ ] 1:1 쪽지
+- [ ] 신고
+
+
+
+
+
+
+
+
+
 			</script>
 			<div class="article-detail__body main-font toast-ui-viewer"></div>
 
@@ -260,9 +448,9 @@
 					이전글</a>
 				<a href="article_list_개발일지_1.html"
 					class="hover-underline ">목록</a>
-				<a title=""
-					href="article_detail_0.html"
-					class="hover-underline none">다음글
+				<a title="[JSP 개발일지] 회원가입시 오류 잡기, 게시글 CRUD"
+					href="article_detail_12.html"
+					class="hover-underline ">다음글
 					&gt;</a>
 			</div>
 		</div>

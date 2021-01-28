@@ -18,7 +18,7 @@
 <!-- 메타태그정보 //-->
 <!-- META -->
 <link rel="canonical" href="https://ssg.yadah.kr" />
-<meta name="subject" content="1강 자바 코드 표준화의 필요성🤩🥰👩‍🚒👮🕵"/>
+<meta name="subject" content="[JSP 개발일지] 게시물 페이징, 게시물 검색, 토스트 에디터 붙이기"/>
 <meta name="title" content="Clean Code" />
 <meta name="keywords" content="HTML, CSS, JAVASCRIPT, JAVA, SPRING, MySQL, 리눅스, 리액트" />
 <meta name="copyright" content="Clean Code" />
@@ -27,16 +27,57 @@
 <!-- OPENGRAPH -->
 <meta property="og:site_name" content="Clean Code" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="1강 자바 코드 표준화의 필요성🤩🥰👩‍🚒👮🕵" />
-<meta property="og:description" content=" 코드 관례 표준화의 필요성
+<meta property="og:title" content="[JSP 개발일지] 게시물 페이징, 게시물 검색, 토스트 에디터 붙이기" />
+<meta property="og:description" content=" JSP 개발일지 게시물 페이징 게시물 검색 토스트 에디터 붙이기
 
- 소스 코드의 가독성 프로젝트 내 개발조직들이 코드 관례를 통일시키면 코드의 일관성이 높아지기 때문에 개발 업무 인수자 코드 리뷰어 기타 관련 개발자들이 코드를 이해하기가 쉬워진다
+youtube
+g9qwUQ1vQ4
 
- 글로벌 표준과의 호환성 프로젝트에 타 프로젝트의 소스 코드 혹은 각종 오픈 소스 코드를 활용하는 경향이 높아지고 있으므로 사실상의 글로벌 표준 코드 관례와 어긋나는 방식을 사용하게 되면 코드의 일관성이 떨어질 가능성이 높아져서 불편해진다
-오라클사의 자바 프로그래밍 언어 코드 관례 문서
 
- 많은 자바 프로젝트들이 이 코드 관례를 기반으로 한다
- 문서 httpwwworaclecomtechnetworkjavacodeconv138413html" />
+ 완료리스트
+ x 프레임워크 구현
+ x 로그인로그아웃
+ x 회원가입
+ x 회원가입 시 발생한 오류잡기
+ x 게시글 CRUD
+ x 인터셉터
+ x 로그인로그아웃 상태 관련 권한체크
+ x 게시물 수정삭제 관련 권한체크
+ x 비밀번호 암호화
+ x 아이디찾기
+ x 비번찾기임시패스워드 발송
+ 추가
+ x 게시물 페이징
+ x 게시물 검색
+ x 토스트 에디터 붙이기
+
+ 당장 할일 리스트
+   회원정보 수정
+   게시물 블라인드
+   좋아요 싫어요
+   내 글에 새 댓글 알림
+
+ 추후 할일 리스트
+   내 댓글에 추가 댓글 알림
+   댓글
+   댓글멘션
+   대댓글
+   태그
+   댓글 ajax화
+   파일업로드
+   회원인증
+   관리자페이지
+   11 쪽지
+   신고
+
+
+
+
+
+
+
+
+" />
 <meta property="og:locale" content="ko_KR" />
 <meta property="og:image" content="https://ssg.yadah.kr/images/logo_opengraph.png" />
 <meta property="og:image:alt" content="ssg.yadah.kr" />
@@ -47,34 +88,116 @@
 <meta property="og:url" content="https://ssg.yadah.kr" />
 <!-- TWITTER -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="1강 자바 코드 표준화의 필요성🤩🥰👩‍🚒👮🕵" />
+<meta name="twitter:title" content="[JSP 개발일지] 게시물 페이징, 게시물 검색, 토스트 에디터 붙이기" />
 <meta name="twitter:site" content="@Clean Code" />
 <meta name="twitter:creator" content="@Clean Code" />
 <meta name="twitter:image" content="/images/logo_opengraph.png">
-<meta name="twitter:description" content=" 코드 관례 표준화의 필요성
+<meta name="twitter:description" content=" JSP 개발일지 게시물 페이징 게시물 검색 토스트 에디터 붙이기
 
- 소스 코드의 가독성 프로젝트 내 개발조직들이 코드 관례를 통일시키면 코드의 일관성이 높아지기 때문에 개발 업무 인수자 코드 리뷰어 기타 관련 개발자들이 코드를 이해하기가 쉬워진다
+youtube
+g9qwUQ1vQ4
 
- 글로벌 표준과의 호환성 프로젝트에 타 프로젝트의 소스 코드 혹은 각종 오픈 소스 코드를 활용하는 경향이 높아지고 있으므로 사실상의 글로벌 표준 코드 관례와 어긋나는 방식을 사용하게 되면 코드의 일관성이 떨어질 가능성이 높아져서 불편해진다
-오라클사의 자바 프로그래밍 언어 코드 관례 문서
 
- 많은 자바 프로젝트들이 이 코드 관례를 기반으로 한다
- 문서 httpwwworaclecomtechnetworkjavacodeconv138413html" />
+ 완료리스트
+ x 프레임워크 구현
+ x 로그인로그아웃
+ x 회원가입
+ x 회원가입 시 발생한 오류잡기
+ x 게시글 CRUD
+ x 인터셉터
+ x 로그인로그아웃 상태 관련 권한체크
+ x 게시물 수정삭제 관련 권한체크
+ x 비밀번호 암호화
+ x 아이디찾기
+ x 비번찾기임시패스워드 발송
+ 추가
+ x 게시물 페이징
+ x 게시물 검색
+ x 토스트 에디터 붙이기
+
+ 당장 할일 리스트
+   회원정보 수정
+   게시물 블라인드
+   좋아요 싫어요
+   내 글에 새 댓글 알림
+
+ 추후 할일 리스트
+   내 댓글에 추가 댓글 알림
+   댓글
+   댓글멘션
+   대댓글
+   태그
+   댓글 ajax화
+   파일업로드
+   회원인증
+   관리자페이지
+   11 쪽지
+   신고
+
+
+
+
+
+
+
+
+" />
 <!-- GOOGLE+ -->
 <meta itemprop="headline" content="Clean Code" />
 <meta itemprop="name" content="Clean Code" />
-<meta itemprop="description" content=" 코드 관례 표준화의 필요성
+<meta itemprop="description" content=" JSP 개발일지 게시물 페이징 게시물 검색 토스트 에디터 붙이기
 
- 소스 코드의 가독성 프로젝트 내 개발조직들이 코드 관례를 통일시키면 코드의 일관성이 높아지기 때문에 개발 업무 인수자 코드 리뷰어 기타 관련 개발자들이 코드를 이해하기가 쉬워진다
+youtube
+g9qwUQ1vQ4
 
- 글로벌 표준과의 호환성 프로젝트에 타 프로젝트의 소스 코드 혹은 각종 오픈 소스 코드를 활용하는 경향이 높아지고 있으므로 사실상의 글로벌 표준 코드 관례와 어긋나는 방식을 사용하게 되면 코드의 일관성이 떨어질 가능성이 높아져서 불편해진다
-오라클사의 자바 프로그래밍 언어 코드 관례 문서
 
- 많은 자바 프로젝트들이 이 코드 관례를 기반으로 한다
- 문서 httpwwworaclecomtechnetworkjavacodeconv138413html" />
+ 완료리스트
+ x 프레임워크 구현
+ x 로그인로그아웃
+ x 회원가입
+ x 회원가입 시 발생한 오류잡기
+ x 게시글 CRUD
+ x 인터셉터
+ x 로그인로그아웃 상태 관련 권한체크
+ x 게시물 수정삭제 관련 권한체크
+ x 비밀번호 암호화
+ x 아이디찾기
+ x 비번찾기임시패스워드 발송
+ 추가
+ x 게시물 페이징
+ x 게시물 검색
+ x 토스트 에디터 붙이기
+
+ 당장 할일 리스트
+   회원정보 수정
+   게시물 블라인드
+   좋아요 싫어요
+   내 글에 새 댓글 알림
+
+ 추후 할일 리스트
+   내 댓글에 추가 댓글 알림
+   댓글
+   댓글멘션
+   대댓글
+   태그
+   댓글 ajax화
+   파일업로드
+   회원인증
+   관리자페이지
+   11 쪽지
+   신고
+
+
+
+
+
+
+
+
+" />
 <meta itemprop="image" content="/images/logo_opengraph.png" />
 
-<title>1강 자바 코드 표준화의 필요성🤩🥰👩‍🚒👮🕵 | Clean Code | ARTICLE DETAIL</title>
+<title>[JSP 개발일지] 게시물 페이징, 게시물 검색, 토스트 에디터 붙이기 | Clean Code | ARTICLE DETAIL</title>
 
 <!-- 폰트어썸 불러오기 -->
 <link rel="stylesheet"
@@ -232,27 +355,68 @@
 			</section><section class="section-1 con-min-width">
 	<div class="con">
 		<div class="article-detail">
-			<h2 class="article-detail__title">1강 자바 코드 표준화의 필요성🤩🥰👩‍🚒👮🕵</h2>
+			<h2 class="article-detail__title">[JSP 개발일지] 게시물 페이징, 게시물 검색, 토스트 에디터 붙이기</h2>
 
 			<div class="article-detail__sub-info flex">
-				<div class="article-detail__board-name">JAVA</div>
-				<div class="article-detail__reg-date">2021-01-19 02:30:48</div>
+				<div class="article-detail__board-name">개발일지</div>
+				<div class="article-detail__reg-date">2021-01-29 03:22:03</div>
 				<div class="article-detail__writer">이주영</div>
-				<div class="article-detail__hit-count">조회수 : 8</div>
-				<div class="article-detail__likes-count">추천수 : 2</div>
-				<div class="article-detail__comments-count">댓글수 : 2</div>
+				<div class="article-detail__hit-count">조회수 : 0</div>
+				<div class="article-detail__likes-count">추천수 : 0</div>
+				<div class="article-detail__comments-count">댓글수 : 0</div>
 			</div>
 
 			<script type="text/x-template">
-# 코드 관례 표준화의 필요성
+# [JSP 개발일지] 게시물 페이징, 게시물 검색, 토스트 에디터 붙이기
 
-- 소스 코드의 가독성: 프로젝트 내 개발조직들이 코드 관례를 통일시키면 코드의 일관성이 높아지기 때문에 개발 업무 인수자, 코드 리뷰어, 기타 관련 개발자들이 코드를 이해하기가 쉬워진다.
+```youtube
+g9qwUQ1v-Q4
+```
 
-- 글로벌 표준과의 호환성: 프로젝트에 타 프로젝트의 소스 코드 혹은 각종 오픈 소스 코드를 활용하는 경향이 높아지고 있으므로, 사실상의 글로벌 표준 코드 관례와 어긋나는 방식을 사용하게 되면 코드의 일관성이 떨어질 가능성이 높아져서 불편해진다.
-오라클사의 자바 프로그래밍 언어 코드 관례 문서
+# 완료리스트
+- [x] 프레임워크 구현
+- [x] 로그인/로그아웃
+- [x] 회원가입
+- [x] 회원가입 시 발생한 오류잡기
+- [x] 게시글 CRUD
+- [x] 인터셉터
+- [x] 로그인/로그아웃 상태 관련 권한체크
+- [x] 게시물 수정/삭제 관련 권한체크
+- [x] 비밀번호 암호화
+- [x] 아이디찾기
+- [x] 비번찾기(임시패스워드 발송)
+### 추가
+- [x] 게시물 페이징
+- [x] 게시물 검색
+- [x] 토스트 에디터 붙이기
 
-# 많은 자바 프로젝트들이 이 코드 관례를 기반으로 한다.
-- 문서: http://www.oracle.com/technetwork/java/codeconv-138413.html
+# 당장 할일 리스트
+- [ ] 회원정보 수정
+- [ ] 게시물 블라인드
+- [ ] 좋아요, 싫어요
+- [ ] 내 글에 새 댓글 알림
+
+# 추후 할일 리스트
+- [ ] 내 댓글에 추가 댓글 알림
+- [ ] 댓글
+- [ ] 댓글멘션
+- [ ] 대댓글
+- [ ] 태그
+- [ ] 댓글, ajax화
+- [ ] 파일업로드
+- [ ] 회원인증
+- [ ] 관리자페이지
+- [ ] 1:1 쪽지
+- [ ] 신고
+
+
+
+
+
+
+
+
+
 			</script>
 			<div class="article-detail__body main-font toast-ui-viewer"></div>
 
@@ -260,8 +424,8 @@
 				<div id="disqus_thread"></div>
 				<script>
 					var disqus_config = function () {
-				        this.page.url = 'https://ssg.yadah.kr/article_detail_1.html';
-				        this.page.identifier = 'article_detail_1.html';
+				        this.page.url = 'https://ssg.yadah.kr/article_detail_15.html';
+				        this.page.identifier = 'article_detail_15.html';
 				    };
 					(function() { // DON'T EDIT BELOW THIS LINE
 						var d = document, s = d.createElement('script');
@@ -278,15 +442,15 @@
 			</div>
 
 			<div class="article-detail__menu flex">
+				<a title="[JSP 개발일지] 아이디찾기, 비번찾기(임시패스워드발송)"
+					href="article_detail_14.html"
+					class="hover-underline ">&lt;
+					이전글</a>
+				<a href="article_list_개발일지_1.html"
+					class="hover-underline ">목록</a>
 				<a title=""
 					href="article_detail_0.html"
-					class="hover-underline none">&lt;
-					이전글</a>
-				<a href="article_list_JAVA_1.html"
-					class="hover-underline ">목록</a>
-				<a title="2강 자바 명명규칙 권장안🐊🐦🐨🐘🦂🍑🕸🦒"
-					href="article_detail_2.html"
-					class="hover-underline ">다음글
+					class="hover-underline none">다음글
 					&gt;</a>
 			</div>
 		</div>
